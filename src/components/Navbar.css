@@ -1,0 +1,18 @@
+
+.nav-base{
+    width: 100%;
+    background: #eb4d4b;
+    min-height: 10vh;
+}
+
+.nav{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    color: #fff;
+}
