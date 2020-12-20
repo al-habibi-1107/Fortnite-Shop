@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+.container{
+    margin-top: 20px;
+    background: radial-gradient(#485563,#29323c);
+    border-radius: 10px;
+    height: 500px;
+    padding-top: 10px;
+}
+
+.prop-img{
+    margin-top: 10px;
+    width: 55%;
+    height: 55%;
+}
+
+.prop-title{
+    font-family: 'Langar', cursive;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.prop-desc{
+    margin-top: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(222, 222, 222);
+}
+
+.prop-btn{
+    padding: 8px 22px;
+    border: 1px solid #fff;
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.prop-btn:hover{
+    color: #29323c;
+    background: white;
+}
