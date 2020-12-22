@@ -7,17 +7,27 @@ import Card from "./blocks/Card";
 function Shop() {
 
     const [dailyItems, setDailyItems] = useState([]);
+    const [featuredItems,setFeaturedItems] = useState([]);
 
     useEffect(() => {
         fetchItems();
+        fetchFeatured();
     }, []);
 
     const fetchItems = async () => {
         const data = await fetch('https://fortnite-api.com/v2/shop/br/combined');
         const items = await data.json();
-          console.log(items.data.daily.entries);
+        //   console.log(items.data);
         const dItem = items.data.daily.entries;
         setDailyItems(dItem);
+    }
+
+    const fetchFeatured = async()=>{
+        const data = await fetch('https://fortnite-api.com/v2/shop/br/combined');
+        const items = await data.json();
+        console.log(items.data.featured.entries);
+        const fItem = items.data.featured.entries;
+        setFeaturedItems(fItem);
     }
 
 
@@ -27,6 +37,18 @@ function Shop() {
             <h1 className="daily-header">Get Your Daily Items Here</h1>
             <div className="daily-items">
                 {dailyItems.map((item) => {
+                    const items = item.items;
+                    return items.map((innerItem) => {
+                        return <Card key={innerItem.id} 
+                        title={innerItem.name} 
+                        desc={innerItem.description}
+                        img={innerItem.images.icon} />;
+                    })
+                })}
+            </div>
+            <h1 className="daily-header">Get Your Featured Items Here</h1>
+            <div className="daily-items">
+                {featuredItems.map((item) => {
                     const items = item.items;
                     return items.map((innerItem) => {
                         return <Card key={innerItem.id} 

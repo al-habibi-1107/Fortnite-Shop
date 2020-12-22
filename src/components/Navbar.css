@@ -3,8 +3,9 @@
 
 
 .nav-base{
+    position: absolute;
     width: 100%;
-    background: black;
+    background: transparent;
     min-height: 10vh;
 }
 
@@ -19,7 +20,7 @@
 .nav-logo{
     color: #fff;
     font-family: 'Langar', cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .nav-items{
