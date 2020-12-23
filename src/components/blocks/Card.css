@@ -5,14 +5,14 @@
 
 .container{
     margin-top: 20px;
-    /* background: radial-gradient(#485563,#29323c); */
-    /* background: radial-gradient(#43cea2,#185a9d); */
-    /* background: radial-gradient(#83a4d4,#b6fbff); */
-    /* background: linear-gradient(#2bc0e4,#eaecc6); */
-    /* background: radial-gradient(#f9d423,#e65c00); */
-    border-radius: 10px;
-    height: 500px;
+    border-radius: 7px;
+    height: 450px;
     padding-top: 10px;
+}
+
+.container:hover{
+    box-shadow: 5px 3px 2px gray;
+    transform: translateY(-20px)
 }
 
 .prop-img{
