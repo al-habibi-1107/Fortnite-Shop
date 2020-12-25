@@ -40,11 +40,15 @@ function Shop() {
                     const items = item.items;
                     return items.map((innerItem) => {
                         return <Card key={innerItem.id} 
+                        id={innerItem.id}
                         title={innerItem.name} 
                         desc={innerItem.description}
                         img={innerItem.images.icon} />;
                     })
                 })}
+            </div>
+            <div className='banner'>
+                <img src='https://i.redd.it/vk5qc9dhbxo01.jpg' alt='img'/>
             </div>
             <h1 className="daily-header">Get Your Featured Items Here</h1>
             <div className="daily-items">
@@ -52,6 +56,7 @@ function Shop() {
                     const items = item.items;
                     return items.map((innerItem) => {
                         return <Card key={innerItem.id} 
+                        id={innerItem.id}
                         title={innerItem.name} 
                         desc={innerItem.description}
                         img={innerItem.images.icon} />;

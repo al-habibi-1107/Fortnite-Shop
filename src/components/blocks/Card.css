@@ -34,6 +34,7 @@
 }
 
 .prop-btn{
+    text-decoration: none;
     padding: 8px 22px;
     border: 1px solid #fff;
     color: white;

@@ -56,13 +56,11 @@ function Home() {
 
 
 
-
     return (
         <>
-
             <img src={imgAddresses} alt='bg' />
             <div className="btn">
-                <button onClick={changeBG}>Shop Now</button>
+                <button >Shop Now</button>
             </div>
         </>
     );

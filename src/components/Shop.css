@@ -25,3 +25,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.banner{
+    width: 100%;
+    margin: 10vh 0px 20vh 0px ;
+}
